@@ -1,0 +1,4 @@
+{
+	"predef": ["describe", "it", "before", "beforeEach", "after", "afterEach", "module"],
+	"node":true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "sonar-js",
+  "version": "0.0.1",
+  "description": "Simple demo of Sonar analysis with node.js projects",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Xavier Seignard <xavier.seignard@gmail.com>",
+  "license": "MIT"
+}

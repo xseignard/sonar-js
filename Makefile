@@ -8,7 +8,7 @@ test:
 	$(MOCHA) -R spec $(TESTS)
 
 xunit:
-	export XUNIT_FILE="reports/xunit.xml"; \
+	export XUNIT_FILE="reports/TESTS-xunit.xml"; \
 	$(MOCHA) -R xunit-file $(TESTS)
 
 coverage:

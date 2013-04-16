@@ -7,6 +7,10 @@ TESTS=$(shell find test/ -name "*.test.js")
 test:
 	$(MOCHA) -R spec $(TESTS)
 
+xunit:
+	export XUNIT_FILE="reports/xunit.xml"; \
+	$(MOCHA) -R xunit-file $(TESTS)
+
 coverage:
 	$(JSCOVER) src/ src-cov/
 	TEST_COV=1 $(MOCHA) -R mocha-lcov-reporter $(TESTS) > reports/coverage.lcov

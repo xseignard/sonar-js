@@ -17,4 +17,11 @@ You can change that by specifying the right values in ```sonar-project.propertie
 * Run the Sonar analysis : ```make sonar```
 * Check the results : [http://localhost:9000](http://localhost:9000) or wherever.
 
+## Misc
+* Run tests with ```make test```
+* Run tests and generate a xunit compatible output with ```make xunit```
+* Run jhsint and generate a checkstyle compatible output with ```make jshint```
+
+All generated files are generated in the reports folder.
+
 Only tested on linux, you may have to adapt some stuff on other platforms.

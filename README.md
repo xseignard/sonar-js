@@ -12,14 +12,14 @@ The actual configuration in ```sonar-project.properties``` assumes the Sonar ser
 You can change that by specifying the right values in ```sonar-project.properties``` (see http://docs.codehaus.org/display/SONAR/Analysis+Parameters).
 
 ## Running
-* Install node dependencies : ```npm install```
-* Run the coverage recipe : ```make coverage```
+* Install node dependencies with ```npm install```
+* Run tests and generate a xunit compatible file with ```make xunit```
+* Run coverage analysis and generate a lcov compatible file with ```make coverage```
 * Run the Sonar analysis : ```make sonar```
 * Check the results : [http://localhost:9000](http://localhost:9000) or wherever.
 
 ## Misc
 * Run tests with ```make test```
-* Run tests and generate a xunit compatible output with ```make xunit```
 * Run jhsint and generate a checkstyle compatible output with ```make jshint```
 
 All generated files are generated in the reports folder.

@@ -4,6 +4,7 @@ Simple demo project to run a Sonar analysis on a js project.
 
 ## Prerequisites
 * Node.js : http://nodejs.org/
+* Python : http://www.python.org/ (only to convert lcov file to cobertura, for Jenkins CI)
 * Sonar : http://www.sonarsource.org/
 * Make : http://www.gnu.org/software/make/
 
@@ -17,13 +18,15 @@ You can change that by specifying the right values in ```sonar-project.propertie
 * Check the results : [http://localhost:9000](http://localhost:9000) or wherever.
 
 ## Tasks in the Makefile
+* Clean with ```make clean```
 * Run tests with ```make test```
 * Run tests and generate a xunit compatible file with ```make xunit```
 * Run coverage analysis and generate a lcov compatible file with ```make coverage```
+* Run coverage analysis and generate a cobertura compatible file with ```make coverage```
 * Run jshint with ```make jshint```
-* Run jhsint and generate a checkstyle compatible output with ```make checkstyle```
+* Run jhsint and generate a checkstyle compatible file with ```make checkstyle```
 * Run the Sonar analysis with ```make sonar```
-* Run a CI related set of tasks (xunit, coverage, checkstyle and sonar) with ```make ci```
+* Run a CI related set of tasks ```make ci```
 
 All generated files are generated in the reports folder.
 

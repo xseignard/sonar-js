@@ -13,14 +13,17 @@ You can change that by specifying the right values in ```sonar-project.propertie
 
 ## Running
 * Install node dependencies with ```npm install```
-* Run tests and generate a xunit compatible file with ```make xunit```
-* Run coverage analysis and generate a lcov compatible file with ```make coverage```
-* Run the Sonar analysis : ```make sonar```
+* Run the ci task with ```make ci```
 * Check the results : [http://localhost:9000](http://localhost:9000) or wherever.
 
-## Misc
+## Tasks in the Makefile
 * Run tests with ```make test```
-* Run jhsint and generate a checkstyle compatible output with ```make jshint```
+* Run tests and generate a xunit compatible file with ```make xunit```
+* Run coverage analysis and generate a lcov compatible file with ```make coverage```
+* Run jshint with ```make jshint```
+* Run jhsint and generate a checkstyle compatible output with ```make checkstyle```
+* Run the Sonar analysis with ```make sonar```
+* Run a CI related set of tasks (xunit, coverage, checkstyle and sonar) with ```make ci```
 
 All generated files are generated in the reports folder.
 

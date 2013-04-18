@@ -1,6 +1,6 @@
 'use strict';
 var Calculator = function() {
-	
+
 	/**
 	 * Add two numbers
 	 * @param {Number} a - first number to add

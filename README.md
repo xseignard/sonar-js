@@ -6,6 +6,7 @@ Simple demo project to run a Sonar analysis on a js project.
 * Node.js : http://nodejs.org/
 * Python : http://www.python.org/ (only to convert lcov file to cobertura, for Jenkins CI)
 * Sonar : http://www.sonarsource.org/
+* Sonar Javascript plugin : http://docs.codehaus.org/display/SONAR/JavaScript+Plugin
 * Make : http://www.gnu.org/software/make/
 
 The actual configuration in ```sonar-project.properties``` assumes the Sonar server is running on [http://localhost:9000](http://localhost:9000).

@@ -46,7 +46,7 @@ checkstyle:
 
 sonar:
 	@# add the sonar sonar-runner executable to the PATH
-	PATH="$$PWD/tools/sonar-runner-2.1/bin:$$PATH" sonar-runner
+	PATH="$$PWD/tools/sonar-runner-2.2/bin:$$PATH" sonar-runner
 
 ci: clean xunit cobertura checkstyle sonar
 

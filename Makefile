@@ -16,8 +16,7 @@ test:
 xunit:
 	@# check if reports folder exists, if not create it
 	@test -d reports || mkdir reports
-	export XUNIT_FILE="reports/TESTS-xunit.xml"; \
-	$(MOCHA) -R xunit-file $(TESTS)
+	XUNIT_FILE="reports/TESTS-xunit.xml" $(MOCHA) -R xunit-file $(TESTS)
 
 coverage:
 	@# check if reports folder exists, if not create it
